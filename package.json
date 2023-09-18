@@ -1,14 +1,14 @@
 {
-  "name": "nodebb-theme-harmony",
+  "name": "nodebb-theme-lovecandies-harmony",
   "version": "1.1.62",
   "nbbpm": {
     "compatibility": "^3.3.0"
   },
-  "description": "Harmony theme for NodeBB",
+  "description": "lovecandies专用，基于harmony主题，增加身份信息界面展示",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NodeBB/nodebb-theme-harmony"
+    "url": "https://github.com/NodeBB/nodebb-theme-lovecandies-harmony"
   },
   "scripts": {
     "lint": "eslint ."
@@ -34,7 +34,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NodeBB/nodebb-theme-harmony/issues"
+    "url": "https://github.com/NodeBB/nodebb-theme-lovecandies-harmony/issues"
   },
   "dependencies": {
     "@fontsource/inter": "5.0.2",
