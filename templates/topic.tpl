@@ -40,7 +40,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="d-flex gap-2 justify-content-end align-items-center mt-2 hidden-empty" component="topic/thumb/list"><!-- IMPORT partials/topic/thumbs.tpl --></div>
+		<div class="container-fluid mt-2 px-0"><!-- IMPORT partials/topic/identity.tpl --></div>
+		<div class="container-fluid mt-2 px-0"><!-- IMPORT partials/topic/thumbs.tpl --></div>
 	</div>
 
 	<div class="row mb-4 mb-lg-0">
