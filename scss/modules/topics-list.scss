@@ -29,6 +29,27 @@ ul.topics-list, ul.categories-list {
 	}
 }
 
+.user-info  {
+	.user-info-content {
+		color: #999;
+	    justify-content: space-between;
+	}
+
+	.user-info-elip {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.user-info-thumb-img {
+		border-radius: 10px;
+		object-fit: cover;
+		width: 100%;
+		max-height: 131px;
+	}
+}
+
+
+
 // on default skin use primary color for unread titles
 .skin-noskin ul.topics-list li.unread .title {
 	color: $primary;
