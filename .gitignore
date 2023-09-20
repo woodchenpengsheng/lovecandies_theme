@@ -6,3 +6,4 @@ sftp-config.json
 .idea
 .vscode
 node_modules/
+templates/.DS_Store
