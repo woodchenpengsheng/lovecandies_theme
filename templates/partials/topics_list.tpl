@@ -10,99 +10,112 @@
 		<meta itemprop="position" content="{./index}" />
 		<a id="{./index}" data-index="{./index}" component="topic/anchor"></a>
 		{{{if !./thumbs.length }}}
-			<div class="w-100 flex-grow-1 d-flex flex-wrap gap-1 position-relative">
-				<h3 component="topic/header"
-					class="title text-break fs-5 fw-semibold m-0 tracking-tight w-100 {{{ if showSelect }}}me-4 me-lg-0{{{ end }}}">
-					{{{ if topics.noAnchor }}}
-					<span>{./title}</span>
-					{{{ else }}}
-					<a class="text-reset"
-						href="{config.relative_path}/topic/{./slug}{{{ if ./bookmark }}}/{./bookmark}{{{ end }}}">{./title}</a>
-					{{{ end }}}
-				</h3>
-				<a href="{config.relative_path}/topic/{./slug}"
-				class="badge bg-transparent text-muted fw-normal timeago" title="{./timestampISO}"></a>
-				{{{ if showSelect }}}
-					<div class="checkbox position-absolute top-0 end-0 m-0 d-flex" style="max-width:max-content">
-						<i component="topic/select" class="fa fa-square-o text-muted pointer p-1"></i>
+		<div class="w-100 flex-grow-1 d-flex flex-wrap gap-1 position-relative">
+			<h3 component="topic/header"
+				class="title text-break fs-5 fw-semibold m-0 tracking-tight w-100 {{{ if showSelect }}}me-4 me-lg-0{{{ end }}}">
+				{{{ if topics.noAnchor }}}
+				<span>{./title}</span>
+				{{{ else }}}
+				<a class="text-reset"
+					href="{config.relative_path}/topic/{./slug}{{{ if ./bookmark }}}/{./bookmark}{{{ end }}}">{./title}</a>
+				{{{ end }}}
+			</h3>
+			<a href="{config.relative_path}/topic/{./slug}" class="badge bg-transparent text-muted fw-normal timeago"
+				title="{./timestampISO}"></a>
+			{{{ if showSelect }}}
+			<div class="checkbox position-absolute top-0 end-0 m-0 d-flex" style="max-width:max-content">
+				<i component="topic/select" class="fa fa-square-o text-muted pointer p-1"></i>
+			</div>
+			{{{ end }}}
+		</div>
+		{{{ else }}}
+		<div class="d-flex" style="width:100%;">
+			<a class="text-reset text-decoration-none"
+				href="{config.relative_path}/topic/{./slug}{{{ if ./bookmark }}}/{./bookmark}{{{ end }}}"
+				style="width:100%">
+				<div class="ps-0 container-fluid user-info d-flex">
+					{{{ if ./thumbs.length }}}
+					<div style="width:30%">
+						<img src="{./thumbs.0.url}" alt="{./thumbs.0.url}" class="user-info-thumb-img">
 					</div>
+					<div class="d-flex flex-column ms-2 user-info-content" style="width:68%">
+						<!-- IMPORT partials/topic/identityTopic.tpl -->
+					</div>
+					{{{ end }}}
+				</div>
+			</a>
+			<div class="flex-grow-1 d-flex flex-wrap gap-1 position-relative">
+				{{{ if showSelect }}}
+				<div class="checkbox position-absolute top-0 end-0 m-0 d-flex" style="max-width:max-content">
+					<i component="topic/select" class="fa fa-square-o text-muted pointer p-1"></i>
+				</div>
 				{{{ end }}}
 			</div>
-		{{{ else }}}
-			<div class="d-flex" style="width:100%;">
-				<a class="text-reset text-decoration-none"
-					href="{config.relative_path}/topic/{./slug}{{{ if ./bookmark }}}/{./bookmark}{{{ end }}}"
-					style="width:100%">
-					<div class="ps-0 container-fluid user-info d-flex">
-						{{{ if ./thumbs.length }}}
-						<div style="width:30%">
-							<img src="{./thumbs.0.url}" alt="{./thumbs.0.url}" class="user-info-thumb-img">
-						</div>
-						<div class="d-flex flex-column ms-2 user-info-content" style="width:68%">
-							<!-- IMPORT partials/topic/identityTopic.tpl -->
-						</div>
-						{{{ end }}}
-					</div>
-				</a>
-				<div class="flex-grow-1 d-flex flex-wrap gap-1 position-relative">
-					{{{ if showSelect }}}
-					<div class="checkbox position-absolute top-0 end-0 m-0 d-flex" style="max-width:max-content">
-						<i component="topic/select" class="fa fa-square-o text-muted pointer p-1"></i>
-					</div>
-					{{{ end }}}
-				</div>
-			</div>
+		</div>
 
-			<div class="d-flex">
-				<div class="d-flex topic-infomation-tool">
-					{{{ if !reputation:disabled }}}
-					<div class="gap-1 align-items-center stats-votes border-0 p-2 overflow-hidden rounded-1 d-flex">
-						<i class="fa-regular fa-thumbs-up text-xs text-muted opacity-75 fa-chevron-up"></i>
-						<span style="color:#c2c2c2;" class="fs-6 lh-1" title="{./votes}">{humanReadableNumber(./votes,
-							0)}</span>
-					</div>
-					{{{ end }}}
-					<div class="gap-1 align-items-center stats-postcount border-0 p-2 overflow-hidden rounded-1 d-flex">
-						<i class="fa fa-fw text-xs text-muted opacity-75 fa-message"></i>
-						<span style="color:#c2c2c2;" class="fs-6 lh-1"
-							title="{./postcount}">{humanReadableNumber(./postcount,
-							0)}</span>
-					</div>
-					<div class="gap-1 align-items-center stats-viewcount border-0 p-2 overflow-hidden rounded-1 d-flex">
-						<i class="fa fa-fw text-xs text-muted opacity-75 fa-eye"></i>
-						<span style="color:#c2c2c2;" class="fs-6 lh-1"
-							title="{./viewcount}">{humanReadableNumber(./viewcount,
-							0)}</span>
-					</div>
+		<div class="d-flex">
+			<div class="d-flex topic-infomation-tool">
+				{{{ if !reputation:disabled }}}
+				<div class="gap-1 align-items-center stats-votes border-0 p-2 overflow-hidden rounded-1 d-flex">
+					<i class="fa-regular fa-thumbs-up text-xs text-muted opacity-75 fa-chevron-up"></i>
+					<span style="color:#c2c2c2;" class="fs-6 lh-1" title="{./votes}">{humanReadableNumber(./votes,
+						0)}</span>
 				</div>
-			</div>
+				{{{ end }}}
+				<div class="gap-1 align-items-center stats-postcount border-0 p-2 overflow-hidden rounded-1 d-flex">
+					<i class="fa fa-fw text-xs text-muted opacity-75 fa-message"></i>
+					<span style="color:#c2c2c2;" class="fs-6 lh-1"
+						title="{./postcount}">{humanReadableNumber(./postcount,
+						0)}</span>
+				</div>
+				<div class="gap-1 align-items-center stats-viewcount border-0 p-2 overflow-hidden rounded-1 d-flex">
+					<i class="fa fa-fw text-xs text-muted opacity-75 fa-eye"></i>
+					<span style="color:#c2c2c2;" class="fs-6 lh-1"
+						title="{./viewcount}">{humanReadableNumber(./viewcount,
+						0)}</span>
+				</div>
 
-			<div component="topic/teaser"
-				class="meta teaser col-lg-6 col-12">
-				<div class="lastpost border-start border-2 lh-sm h-100 d-flex flex-column gap-1"
-					style="border-color: {./category.bgColor}!important;">
-					{{{ if ./unreplied }}}
-					<div class="ps-2 text-xs">
-						[[category:no_replies]]
-					</div>
-					{{{ else }}}
-					{{{ if ./teaser.pid }}}
-					<div class="ps-2">
-						<a href="{config.relative_path}/user/{./teaser.user.userslug}"
-							class="text-decoration-none">{buildAvatar(./teaser.user, "18px", true, "avatar-tooltip
-							not-responsive")}</a>
-						<a class="permalink text-muted timeago text-xs"
-							href="{config.relative_path}/topic/{./slug}/{./teaser.index}" title="{./teaser.timestampISO}">
-						</a>
-					</div>
-					<div class="post-content text-xs ps-2 line-clamp-sm-2 lh-sm text-break position-relative flex-fill">
-						<a class="stretched-link" href="{config.relative_path}/topic/{./slug}/{./teaser.index}"></a>
-						{./teaser.content}
-					</div>
-					{{{ end }}}
-					{{{ end }}}
-				</div>
+				<span component="topic/labels" class="d-flex flex-wrap gap-1 p-2 align-items-center">
+					<span component="topic/pinned"
+						class="badge border border-gray-300 text-body {{{ if (./scheduled || !./pinned) }}}hidden{{{ end }}}">
+						<i class="fa fa-thumb-tack"></i>
+						{{{ if !./pinExpiry }}}[[topic:pinned]]{{{ else }}}[[topic:pinned-with-expiry,
+						{isoTimeToLocaleString(./pinExpiryISO)}]]{{{ end }}}
+					</span>
+					<!-- <span component="topic/locked"
+						class="badge border border-gray-300 text-body {{{ if !./locked }}}hidden{{{ end }}}">
+						<i class="fa fa-lock"></i>
+						[[topic:locked]]
+					</span> -->
+				</span>
 			</div>
+		</div>
+
+		<div component="topic/teaser" class="meta teaser col-lg-6 col-12">
+			<div class="lastpost border-start border-2 lh-sm h-100 d-flex flex-column gap-1"
+				style="border-color: {./category.bgColor}!important;">
+				{{{ if ./unreplied }}}
+				<div class="ps-2 text-xs">
+					[[category:no_replies]]
+				</div>
+				{{{ else }}}
+				{{{ if ./teaser.pid }}}
+				<div class="ps-2">
+					<a href="{config.relative_path}/user/{./teaser.user.userslug}"
+						class="text-decoration-none">{buildAvatar(./teaser.user, "18px", true, "avatar-tooltip
+						not-responsive")}</a>
+					<a class="permalink text-muted timeago text-xs"
+						href="{config.relative_path}/topic/{./slug}/{./teaser.index}" title="{./teaser.timestampISO}">
+					</a>
+				</div>
+				<div class="post-content text-xs ps-2 line-clamp-sm-2 lh-sm text-break position-relative flex-fill">
+					<a class="stretched-link" href="{config.relative_path}/topic/{./slug}/{./teaser.index}"></a>
+					{./teaser.content}
+				</div>
+				{{{ end }}}
+				{{{ end }}}
+			</div>
+		</div>
 		{{{ end }}}
 	</li>
 	{{{end}}}
