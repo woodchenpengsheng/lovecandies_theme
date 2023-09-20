@@ -20,6 +20,8 @@
 						href="{config.relative_path}/topic/{./slug}{{{ if ./bookmark }}}/{./bookmark}{{{ end }}}">{./title}</a>
 					{{{ end }}}
 				</h3>
+				<a href="{config.relative_path}/topic/{./slug}"
+				class="badge bg-transparent text-muted fw-normal timeago" title="{./timestampISO}"></a>
 				{{{ if showSelect }}}
 					<div class="checkbox position-absolute top-0 end-0 m-0 d-flex" style="max-width:max-content">
 						<i component="topic/select" class="fa fa-square-o text-muted pointer p-1"></i>
