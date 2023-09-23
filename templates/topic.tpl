@@ -42,6 +42,7 @@
 		</div>
 		<div class="container-fluid mt-2 px-0"><!-- IMPORT partials/topic/identity.tpl --></div>
 		<div class="container-fluid mt-2 px-0"><!-- IMPORT partials/topic/thumbs.tpl --></div>
+		<div class="container-fluid mt-2 px-0"><!-- IMPORT partials/topic/identity-recharge-contact.tpl --></div>
 	</div>
 
 	<div class="row mb-4 mb-lg-0">

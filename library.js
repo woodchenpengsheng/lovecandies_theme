@@ -199,3 +199,9 @@ library.removeFinalBreadcrumb = async (hookData) => {
 
 	return hookData;
 };
+
+library.getThemeTopicData = async function(hookData) {
+	const { topic, uid } = hookData;
+	topic.reqUserInfo = await user.getUserFields(uid, ['reputation']);
+	return hookData;
+}
