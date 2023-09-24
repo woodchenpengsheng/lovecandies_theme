@@ -19,7 +19,10 @@
             <ul>
                 <li>哥哥说：你好,我这边到xxx大概40分钟，晚上21:00后有空，请问你可以给我安排个时间么？</li>
                 <li>小姐姐可能的答复：你好，我这边22:00有空，可以嘛</li>
-                <li>哥哥说：好的，不见不散</li>
+                <li>哥哥说：你的位置在哪里？我看下多远</li>
+                <li>小姐姐可能的答复：你好，在xxxxxx</li>
+                <li>哥哥说：好的没问题，22:00准时到</li>
+                <li>小姐姐可能的答复：好的，等下见</li>
             </ul>
         </div>
         <div class="mt-1 rounded-4 border border-0 card-footer" style="background-color: cornsilk;">
