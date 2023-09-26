@@ -35,6 +35,7 @@
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 点击支付后，参照步骤，万一遇到问题，在评论区直接留言，这边会通过站内聊天软件进行联系和处理并且评论区会回复。开发人员前期也会关注订单情况，站内主动联系的，不会让你白花钱的！</h6>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 请大家放心购买！诚不欺人！诚信赢天下！</h6>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 这边提供联系方式，后面没有二次付费了，你们线下自己约见即可！要押金的一律不要信。</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 服务内容和价格就是上面你们看到的，某信查封很严，熟悉平台的流程后，和女生聊天中可以不再涉及关键词，直接去就行。</h6>
             <p class="card-text mb-2">
                 <i class="fa-regular fa-face-smile-wink"></i> 您当前的声望为：<span style="color: deeppink" class="fs-2">{reqUserInfo.reputation}<span>
             </p>
