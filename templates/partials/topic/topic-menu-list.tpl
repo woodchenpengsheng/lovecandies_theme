@@ -26,7 +26,7 @@
 {{{ if privileges.isAdminOrMod }}}
 <li><a component="topic/delete/posts" class="dropdown-item rounded-1 d-flex align-items-center gap-2" href="#"><i class="fa fa-fw text-muted fa-trash-o"></i> [[topic:thread_tools.delete-posts]]</a></li>
 {{{ end }}}
-
+<li class="dropdown-divider"></li>
 {{{ each thread_tools }}}
 <li><a href="#" class="dropdown-item rounded-1 d-flex align-items-center gap-2 {./class}"><i class="fa fa-fw text-muted {./icon}"></i> {./title}</a></li>
 {{{ end }}}
