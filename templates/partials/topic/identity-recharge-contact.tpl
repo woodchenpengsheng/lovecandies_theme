@@ -38,7 +38,7 @@
                 <i class="fa-regular fa-face-smile-wink"></i> 您当前的声望为：<span style="color: deeppink" class="fs-2">{reqUserInfo.reputation}<span>
             </p>
             <p class="card-text mb-2">
-                <a href="{config.relative_path}/recharge" class="card-link"><i class="fa-regular fa-lemon"></i> 点这里进行声望充值</a>
+                <a component="recharge/reputation" href="#" class="card-link"><i class="fa-regular fa-lemon"></i> 点这里进行声望充值</a>
             </p>
             <p class="card-text mb-2">
                 <a component="topic/unlock-contact" href="#" class="link-underline-primary card-link"><i class="fa-regular fa-lemon"></i> 点这里解锁联系方式</a>
@@ -47,3 +47,6 @@
     {{{ end }}}
 </div>
 {{{ end }}}
+
+
+<!-- <a href="{config.relative_path}/recharge" class="card-link"><i class="fa-regular fa-lemon"></i> 点这里进行声望充值</a> -->
