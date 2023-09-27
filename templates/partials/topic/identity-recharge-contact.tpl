@@ -11,13 +11,14 @@
         <div class="mt-1 rounded-4 border border-0 card-body" style="background-color: aliceblue;">
             <p class="card-text mb-1">注意事项：</p>
             <ol>
-                <li>因为封号严重，各位哥哥联系过程中尽量减少敏感词哦，简单问一下什么时候有空，<span style="color: var(--bs-danger);">提前预约时间</span>，最后要位置即可。</li>
+                <li>因为封号严重，各位哥哥联系过程中尽量减少敏感词哦，简单问一下什么时候有空，<span class="fs-5" style="color: var(--bs-danger);">提前预约时间</span>，最后要位置即可。</li>
+                <li>添加上后可以告诉对方<span style="color: red">从木头爱吃糖论坛</span>获得信息，方便平台推广，后续资源更新也能更快，更好的服务大家。</li>
             </ol>
         </div>
         <div class="mt-1 rounded-4 border border-0 card-body" style="background-color: lavenderblush;">
             <p class="card-text mb-1">聊天参考：</p>
             <ul>
-                <li>哥哥说：你好,我这边到xxx大概40分钟，晚上21:00后有空，请问你可以给我安排个时间么？</li>
+                <li>哥哥说：你好，我从<span style="color:red">木头爱吃糖论坛</span>得到你的服务信息，到xxx大概40分钟，晚上21:00后有空，请问你可以给我安排个时间么？</li>
                 <li>小姐姐可能的答复：你好，我这边22:00有空，可以嘛</li>
                 <li>哥哥说：你的位置在哪里？我看下多远</li>
                 <li>小姐姐可能的答复：你好，在xxxxxx</li>
