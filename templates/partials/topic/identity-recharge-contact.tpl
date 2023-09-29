@@ -13,6 +13,7 @@
             <ol>
                 <li>因为封号严重，各位哥哥联系过程中尽量减少敏感词哦，简单问一下什么时候有空，<span class="fs-5" style="color: var(--bs-danger);">提前预约时间</span>，最后要位置即可。</li>
                 <li>添加上后可以告诉对方<span style="color: red">从木头爱吃糖论坛</span>获得信息，方便平台推广，后续资源更新也能更快，更好的服务大家。</li>
+                <li><span style="color:red">女生可能会晚一点加</span>，特别是高峰期的时候！请提前预约，提前加，谢谢！你也可以<span style="color:red">多买几个联系方式，如果联系方式全部失效，可以评论滴，这边验证通过会退你的，几十块一个联系方式也不贵哇！</span></li>
             </ol>
         </div>
         <div class="mt-1 rounded-4 border border-0 card-body" style="background-color: lavenderblush;">

@@ -10,7 +10,7 @@
         <p class="mb-1 card-text"><span>价格：</span>{identity.identityPrice}</p>
         <p class="mb-1 card-text"><span>服务内容：</span>{identity.identityServiceDescription}</p>
     </div>
-    <div class="fw-lighter mt-1 rounded-4 border border-0 card-footer">
+    <div class="fw-light mt-1 rounded-4 border border-0 card-footer">
         <p class="card-text">{identity.identityDescription}</p>
     </div>
 </div>
