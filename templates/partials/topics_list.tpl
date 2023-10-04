@@ -29,7 +29,7 @@
 			{{{ end }}}
 		</div>
 		{{{ else }}}
-		<div class="d-flex" style="width:100%;">
+		<div component="topic/header" class="d-flex" style="width:100%;">
 			<a class="text-reset text-decoration-none"
 				href="{config.relative_path}/topic/{./slug}{{{ if ./bookmark }}}/{./bookmark}{{{ end }}}"
 				style="width:100%">
