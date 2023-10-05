@@ -35,7 +35,7 @@
 				style="width:100%">
 				<div class="ps-0 container-fluid user-info d-flex">
 					{{{ if ./thumbs.length }}}
-					<div style="width:30%">
+					<div style="width:30%; align-self: center;">
 						<img src="{./thumbs.0.url}" alt="{./thumbs.0.url}" class="user-info-thumb-img">
 					</div>
 					<div class="d-flex flex-column ms-2 user-info-content" style="width:68%">
