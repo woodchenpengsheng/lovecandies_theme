@@ -35,6 +35,18 @@ ul.topics-list, ul.categories-list {
 	    justify-content: space-between;
 	}
 
+	.current-state-1 {
+		color: green;
+	}
+
+	.current-state-2 {
+		color: red;
+	}
+
+	.current-state-3 {
+		color: deeppink;
+	}
+
 	.user-info-elip {
 		white-space: nowrap;
 		overflow: hidden;
