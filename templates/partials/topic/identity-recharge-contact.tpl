@@ -33,7 +33,7 @@
     {{{ if !unlockContact }}}
         <div class="rounded-4 card-body" style="background-color: var(--bs-info-bg-subtle)">
             <h5 class="card-title">需要消耗 <span component="topic/consume-reputation">{unlock::consume::reputation}</span> 声望解锁</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 点击支付后，参照步骤，万一遇到问题，在评论区直接留言，这边会通过站内聊天软件进行联系和处理并且评论区会回复。开发人员前期也会关注订单情况，站内主动联系的，不会让你白花钱的！</h6>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 点击支付后，参照步骤，支付购买那一页面会有多个购买选项，挑选任意一个你们支持的付款方式即可。付款的时候，如果提示有xxx的话，退出来重新选就可以，交易成功后，5分钟内到账（一般是秒到账），开发这边也会看订单的，不会让你白花钱的，放心！</h6>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 请大家放心购买！诚不欺人！诚信赢天下！</h6>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 这边提供联系方式，后面没有二次付费了，你们线下自己约见即可！要押金的一律不要信。</h6>
             <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 我也理解大家想要了解更多，想要保障，好一点的，服务内容和价格和图片(可能存在美颜，但是人照不符直接反馈)就是上面你们看到的，和女生沟通尽量少闲聊哦，普遍很反感的，某信查封很严，熟悉平台的流程后，和女生聊天中可以不再涉及关键词，直接要位置和时间就行。</h6>
