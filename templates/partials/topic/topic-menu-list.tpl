@@ -28,6 +28,6 @@
 {{{ end }}}
 <li class="dropdown-divider"></li>
 {{{ each thread_tools }}}
-<li><a href="#" class="dropdown-item rounded-1 d-flex align-items-center gap-2 {./class}"><i class="fa fa-fw text-muted {./icon}"></i> {./title}</a></li>
+<li><a href="#" {{{ if thread_tools.component }}} component="{thread_tools.component}" {{{ end }}} class="dropdown-item rounded-1 d-flex align-items-center gap-2 {./class}"><i class="fa fa-fw text-muted {./icon}"></i> {./title}</a></li>
 {{{ end }}}
 {{{ end }}}

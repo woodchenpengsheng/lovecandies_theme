@@ -14,7 +14,7 @@
 			</h1>
 
 			<div class="topic-info d-flex gap-2 align-items-center flex-wrap {{{ if config.theme.centerHeaderElements }}}justify-content-center{{{ end }}}">
-				<span component="topic/labels" class="d-flex gap-2 {{{ if (!scheduled && (!pinned && (!locked && (!oldCid && !icons.length)))) }}}hidden{{{ end }}}">
+					<span component="topic/labels" class="d-flex gap-2 {{{ if (!scheduled && (!pinned && (!locked && (!expire && (!expireTime && (!oldCid && !icons.length)))))) }}}hidden{{{ end }}}">
 					<span component="topic/scheduled" class="badge badge border border-gray-300 text-body {{{ if !scheduled }}}hidden{{{ end }}}">
 						<i class="fa fa-clock-o"></i>
 						[[topic:scheduled]]
@@ -26,6 +26,14 @@
 					<span component="topic/locked" class="badge badge border border-gray-300 text-body {{{ if !locked }}}hidden{{{ end }}}">
 						<i class="fa fa-lock"></i>
 						[[topic:locked]]
+					</span>
+					<span component="topic/expire" class="badge badge border border-gray-300 text-body {{{ if !expire }}}hidden{{{ end }}}">
+						<i class="fa fa-clock"></i>
+						[[expireTopic:expire, {isoTimeToLocaleString(./expireTime)}]]
+					</span>
+					<span component="topic/will-expire" class="badge badge border border-gray-300 text-body {{{ if (expire || !expireTime) }}}hidden{{{ end }}}">
+						<i class="fa fa-clock-rotate-left"></i>
+						[[expireTopic:will-expire-time, {isoTimeToLocaleString(./expireTime)}]]
 					</span>
 					<a href="{config.relative_path}/category/{oldCid}" class="badge badge border border-gray-300 text-body text-decoration-none {{{ if !oldCid }}}hidden{{{ end }}}">
 						<i class="fa fa-arrow-circle-right"></i>

@@ -79,7 +79,7 @@
 
 		{{{each thread_tools}}}
 		<li>
-			<a href="#" class="dropdown-item rounded-1 d-flex align-items-center gap-2 {thread_tools.class}">
+			<a href="#" {{{ if thread_tools.component }}} component="{thread_tools.component}" {{{ end }}} class="dropdown-item rounded-1 d-flex align-items-center gap-2 {thread_tools.class}">
 				<i class="fa fa-fw {thread_tools.icon}"></i>
 				{thread_tools.title}</a>
 		</li>

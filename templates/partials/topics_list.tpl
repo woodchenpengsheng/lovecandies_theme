@@ -39,7 +39,11 @@
 						<img src="{./thumbs.0.url}" alt="{./thumbs.0.url}" class="user-info-thumb-img">
 					</div>
 					<div class="d-flex flex-column ms-2 user-info-content" style="width:68%">
-						<!-- IMPORT partials/topic/identityTopic.tpl -->
+						{{{ if ./expire }}}
+							<!-- IMPORT partials/topic/identityExpire.tpl -->
+						{{{ else }}}
+							<!-- IMPORT partials/topic/identityTopic.tpl -->
+						{{{ end }}}
 					</div>
 					{{{ end }}}
 				</div>
@@ -82,6 +86,17 @@
 						{{{ if !./pinExpiry }}}[[topic:pinned]]{{{ else }}}[[topic:pinned-with-expiry,
 						{isoTimeToLocaleString(./pinExpiryISO)}]]{{{ end }}}
 					</span>
+					<span component="topic/expire" 
+						class="badge badge border border-gray-300 text-body {{{ if !./expire }}}hidden{{{ end }}}">
+					 	<i class="fa fa-clock"></i>
+						[[expireTopic:expire, {formatTimeStamp2LocalTime(./expireTime)}]]
+					</span>
+					<span component="topic/will-expire" 
+						class="badge badge border border-gray-300 text-body {{{ if (./expire || !./expireTime) }}}hidden{{{ end }}}">
+						<i class="fa fa-clock-rotate-left"></i>
+						[[expireTopic:will-expire-time, {formatTimeStamp2LocalTime(./expireTime)}]]
+					</span>
+
 					<!-- <span component="topic/locked"
 						class="badge border border-gray-300 text-body {{{ if !./locked }}}hidden{{{ end }}}">
 						<i class="fa fa-lock"></i>
