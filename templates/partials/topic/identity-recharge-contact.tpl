@@ -11,8 +11,8 @@
     <div class="mt-1 rounded-4 border border-0 card-body" style="background-color: aliceblue;">
         <p class="card-text mb-1">注意事项：</p>
         <ol>
-            <li>因为封号严重，各位哥哥联系过程中尽量减少敏感词哦，简单问一下什么时候有空，<span class="fs-5"
-                    style="color: var(--bs-danger);">提前预约时间</span>，最后要位置即可。</li>
+            <li>因为封号严重，各位哥哥联系过程中尽量减少敏感词，简单问一下什么时候有空，<span class="fs-5"
+                    style="color: var(--bs-danger);">提前预约时间</span>，最后要位置，请配合一下(课表内容都在这里)。<strong style="color:red" class="fs-3">尽可能不要再问课表了！</strong></li>
             <li><span style="color:red">女生可能会晚一点加</span>，特别是高峰期的时候！请提前预约，提前加，谢谢！你也可以<span
                     style="color:red">多买几个联系方式，如果联系方式全部失效，可以评论滴，这边验证通过会退你的，几十块一个联系方式也不贵哇！</span></li>
         </ol>
@@ -98,6 +98,9 @@
         </h6>
         <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> <strong style="color:red"
                 class="fs-5">各位朋友尽量提前预约，特别是高峰期，有联系方式后，可能出现回复慢的情况(1-2小时才回复)</strong>，我们真的也很无奈，因为这个问题解不了的。小本生意，各位朋友也不敢怠慢，但我们又催不动的，我们能做到的是近期(拿到联系方式的时候)保证有效性和在本地，服务内容一般都是没问题的，但是时效性看运气，有的是秒回，有的为了提高服务质量，顾不过来。
+        </h6>
+        <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> <strong style="color:red"
+                class="fs-5">课表内容尽可能请不要再问女生了，这里写的就是，很容易封号，特别容易封号！</strong>可以在论坛里面聊，分享。
         </h6>
     </div>
     {{{ end }}}
