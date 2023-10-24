@@ -12,9 +12,9 @@
         <p class="card-text mb-1">注意事项：</p>
         <ol>
             <li>因为封号严重，各位哥哥联系过程中尽量减少敏感词，简单问一下什么时候有空，<span class="fs-5"
-                    style="color: var(--bs-danger);">提前预约时间</span>，最后要位置，请配合一下(课表内容都在这里)。<strong style="color:red" class="fs-3">尽可能不要再问课表了！</strong></li>
+                    style="color: var(--bs-danger);">提前预约时间</span>，然后要位置即可。</li>
             <li><span style="color:red">女生可能会晚一点加</span>，特别是高峰期的时候！请提前预约，提前加，谢谢！你也可以<span
-                    style="color:red">选择购买vip</span></li>
+                    style="color:red">选择购买vip，多次解锁，总有适合你的</span></li>
         </ol>
     </div>
     <div class="mt-1 rounded-4 border border-0 card-body" style="background-color: lavenderblush;">
@@ -47,7 +47,7 @@
         <h6 class="card-title">需要消耗 <span component="topic/consume-reputation">{unlock::consume::reputation}</span> 声望解锁
         </h6>
         <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i>
-            如果不回复的时间>=12个小时或者不在本地或者休假了(尽量白天下午联系,半夜晚上都忙)，页面介绍状态标记是绿色的【会回复状态】话，会退本次声望。</h6>
+            如果联系方式全部失效(不回复的时间>=24小时或者不在本地或者休假了，页面介绍状态标记是绿色的【会回复状态】话，会退本次声望。)</h6>
         <ol class="mb-0">
             <li class="card-subtitle mb-2 text-body-secondary"><i class="fa-solid fa-bomb"></i>
                 今天下午3点加她微信，过了8分钟没反应，打她电话也没人回，到第二天差不多中午了还是没反应，然后你打她电话还是没人接，这个时候可以主动反馈给我们</li>
@@ -71,7 +71,7 @@
     <div class="rounded-4 card-body mb-2" style="background-color: var(--bs-info-bg-subtle)">
         <h5 class="card-title">方式二：VIP解锁</h5>
         <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i>
-            使用此种方式解锁后，可以在服务周期内多次解锁，但是不再提供女生回复慢退声望的服务。</h6>
+            使用此种方式解锁后，可以在服务周期内多次解锁。</h6>
         <p class="card-text mb-2">
             {{{ if (candies:vip:recharge && candies:vip:expire) }}}
                 <p class="card-text fs-5" style="color: deeppink">您的vip有效期到：<span style="font-size:1rem">{isoTimeToLocaleString(candies:vip:expire)}</span></p>
@@ -90,17 +90,11 @@
         <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i>
             点击支付后，参照步骤，支付购买那一页面会有多个购买选项，挑选任意一个你们支持的付款方式即可。付款的时候，如果提示有xxx的话，退出来重新选就可以，交易成功后，5分钟内到账（一般是秒到账），开发这边能看订单的，出异常可以反馈，不会让你白花钱的，放心！
         </h6>
-        <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 请大家放心购买！诚不欺人！诚信赢天下！</h6>
+        <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> 请大家放心购买！</h6>
         <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i>
             这边提供联系方式，后面没有二次付费了，你们线下自己约见即可！要押金的一律不要信。</h6>
-        <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i>
-            我也理解大家想要了解更多，想要保障，好一点的，服务内容和价格和图片(可能存在美颜，但是人照不符直接反馈)就是上面你们看到的，和女生沟通尽量少闲聊哦，普遍很反感的，某信查封很严，熟悉平台的流程后，和女生聊天中可以不再涉及关键词，直接要位置和时间就行。
-        </h6>
         <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> <strong style="color:red"
-                class="fs-5">各位朋友尽量提前预约，特别是高峰期，有联系方式后，可能出现回复慢的情况(1-2小时才回复)</strong>，我们真的也很无奈，因为这个问题解不了的。小本生意，各位朋友也不敢怠慢，但我们又催不动的，我们能做到的是近期(拿到联系方式的时候)保证有效性和在本地，服务内容一般都是没问题的，但是时效性看运气，有的是秒回，有的为了提高服务质量，顾不过来。
-        </h6>
-        <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i> <strong style="color:red"
-                class="fs-5">课表内容尽可能请不要再问女生了，这里写的就是，很容易封号，特别容易封号！</strong>可以在论坛里面聊，分享。
+                class="fs-5">各位朋友尽量提前预约(下午)，有联系方式后，可能出现回复慢的情况(1-2小时才回复)</strong>，我们真的也很无奈，因为这个问题解不了的。我们催不动女生，我们能做到的是近期(拿到联系方式的时候)保证有效性，但是时效性看运气，有的是秒回，有的为了提高服务质量，顾不过来。
         </h6>
     </div>
     {{{ end }}}
