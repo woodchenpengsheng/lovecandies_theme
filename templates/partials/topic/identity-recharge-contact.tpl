@@ -28,13 +28,6 @@
             <li>小姐姐可能的答复：好的，等下见</li>
         </ul>
     </div>
-    <div class="mt-1 rounded-4 border border-0 card-footer" style="background-color: cornsilk;">
-        <p class="card-text"><span
-                style="color: var(--bs-danger);">异常处理</span>：<br>如果联系方式全部失效(不排除这种极端情况)，或者其他异常，请点击下方<span class="fs-3"
-                style="color: var(--bs-danger);">第一个</span>帖子的右下角的<i
-                class="fs-3 fa fa-fw fa-ellipsis-v text-primary"></i>号(解锁后专属)
-            ->【举报这个帖子】，然后描述你的问题，我们每天晚上会进行检查，然后处理你的问题并且进行补偿，最后通过站内聊天软件进行通知！</p>
-    </div>
     {{{ end }}}
     {{{ if !unlockContact }}}
     {{{ if expire }}}
