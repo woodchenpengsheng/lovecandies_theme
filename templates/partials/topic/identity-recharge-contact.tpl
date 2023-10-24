@@ -14,7 +14,7 @@
             <li>因为封号严重，各位哥哥联系过程中尽量减少敏感词，简单问一下什么时候有空，<span class="fs-5"
                     style="color: var(--bs-danger);">提前预约时间</span>，最后要位置，请配合一下(课表内容都在这里)。<strong style="color:red" class="fs-3">尽可能不要再问课表了！</strong></li>
             <li><span style="color:red">女生可能会晚一点加</span>，特别是高峰期的时候！请提前预约，提前加，谢谢！你也可以<span
-                    style="color:red">多买几个联系方式，如果联系方式全部失效，可以评论滴，这边验证通过会退你的，几十块一个联系方式也不贵哇！</span></li>
+                    style="color:red">选择购买vip</span></li>
         </ol>
     </div>
     <div class="mt-1 rounded-4 border border-0 card-body" style="background-color: lavenderblush;">
@@ -47,7 +47,7 @@
         <h6 class="card-title">需要消耗 <span component="topic/consume-reputation">{unlock::consume::reputation}</span> 声望解锁
         </h6>
         <h6 class="card-subtitle mb-2 text-body-secondary"><i class="fa-regular fa-hand"></i>
-            如果不回复的时间>=12个小时或者不在本地或者休假了(尽量白天联系,半夜晚上都忙)，页面介绍状态标记是绿色的【会回复状态】话，除了退解锁的声望另外多退50%声望。</h6>
+            如果不回复的时间>=12个小时或者不在本地或者休假了(尽量白天下午联系,半夜晚上都忙)，页面介绍状态标记是绿色的【会回复状态】话，会退本次声望。</h6>
         <ol class="mb-0">
             <li class="card-subtitle mb-2 text-body-secondary"><i class="fa-solid fa-bomb"></i>
                 今天下午3点加她微信，过了8分钟没反应，打她电话也没人回，到第二天差不多中午了还是没反应，然后你打她电话还是没人接，这个时候可以主动反馈给我们</li>
